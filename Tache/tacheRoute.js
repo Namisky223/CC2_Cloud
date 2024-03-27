@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Tache = require('../models/Tache');
+const Tache = require('../Tache/Tache.js');
 
 router.post('/ajouter', async (req, res) => {
   const { titre, description, date_echeance, priorite } = req.body;
